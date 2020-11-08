@@ -1,0 +1,26 @@
+<section class="toolbar-container">
+    <div class="toolbar-container__nav-bar">
+        <a routerLink="/home"><img id="logo" [src]="logoPath"></a>
+        <ul>
+            <li><a routerLink="/home" (click)="navigate()">Home</a></li>
+            <li *ngFor="let link of links">
+                <a *ngIf="link.path && !link.children" routerLinkActive="active-link" [routerLink]="link.path"
+                    (click)="navigate()"> {{link.text}} </a>
+                <a *ngIf="link.children" (click)="toggleSubMenu(link)"> {{link.text}} </a>
+            </li>
+        </ul>
+    </div>
+
+    <div *ngIf="chosenLink && chosenLink.children" class="toolbar-container__sub-menu"
+        [ngClass]="{'open': subMenuOpen}">
+        <div class="sub-menu-desktop-description">
+            <a [routerLink]="chosenLink.path" (click)="navigate()">{{chosenLink.text}}</a>
+        </div>
+
+        <div class="sub-menu-desktop-content">
+            <p *ngFor="let child of chosenLink.children">
+                <a [routerLink]="child.path" routerLinkActive="active-link" (click)="navigate()">{{child.text}}</a>
+            </p>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,82 @@
+.home {
+  .home__banner {
+    position: relative;
+    background: url("../../../assets/images/home/home.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+    height: calc(100vh - var(--nav-bar-height));
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    @media screen and (max-width: 768px) {
+      height: calc(100vh - var(--nav-bar-height-mobile));
+      align-items: center;
+      background-position: top right;
+      padding-top: var(--nav-bar-height-mobile);
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0.45;
+      z-index: 0;
+    }
+
+    .content {
+      z-index: 2;
+    }
+
+    .banner__container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      padding-left: var(--padding-left-desktop);
+
+      @media screen and (max-width: 768px) {
+        padding-left: unset;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .banner__container__text {
+        color: white;
+        font-size: var(--font-size-xl);
+        font-family: var(--font-family-semibold);
+        text-shadow: -1px 1px 2px var(--main-color);
+
+        @media screen and (max-width: 768px) {
+          font-size: var(--font-size-l);
+          text-align: center;
+        }
+      }
+      .banner__container__cta {
+        color: white;
+        font-size: var(--font-size-l);
+        font-family: var(--font-family-semibold);
+
+        margin: 1rem 0;
+
+        background-color: var(--second-color);
+        border-radius: 16px;
+        box-shadow: 1px -1px 1px 0px var(--second-color);
+        padding: 0.5rem;
+
+        .ion-ios-arrow-forward {
+          padding-left: 0.5rem;
+        }
+
+        @media screen and (max-width: 768px) {
+          font-size: var(--font-size-r);
+        }
+      }
+    }
+  }
+}

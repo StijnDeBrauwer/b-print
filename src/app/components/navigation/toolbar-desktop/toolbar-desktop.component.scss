@@ -1,0 +1,38 @@
+
+.toolbar-container{
+    .toolbar-container__nav-bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 2;
+        background-color: white;
+        height: var(--nav-bar-height);
+
+        #logo{
+            height: 85px;
+            padding-left: var(--padding-left-desktop);
+        }
+
+        ul{
+            list-style: none;
+            display: inline-flex;
+            flex-direction: row;
+            margin-right: 1rem;
+
+            li{
+                padding: 0 1rem;
+                a{
+                    color: var(--main-color);
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: var(--font-family-semibold);
+                }
+            }
+        }
+    }
+
+    .toolbar-container__sub-menu{
+
+    }
+}
