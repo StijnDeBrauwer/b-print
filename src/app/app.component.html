@@ -4,7 +4,9 @@
   <app-toolbar-desktop *ngIf="!isMobile">
   </app-toolbar-desktop>
 
-  <router-outlet></router-outlet>
+  <div [ngClass]="{'mobile-content': isMobile, 'desktop-content': !isMobile}">
+    <router-outlet></router-outlet>
+  </div>
 
   <app-footer></app-footer>
 </section>

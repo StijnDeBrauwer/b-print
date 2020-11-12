@@ -17,4 +17,6 @@ export class HamburgerComponent implements OnInit {
 	toggle() {
 		this.navOpen = !this.navOpen;
 	}
+
+	navigate() {}
 }

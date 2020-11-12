@@ -1,6 +1,6 @@
-<section class="toolbar-container">
+<section class="toolbar-container" [ngClass]="{'transparent': isTransparent}">
     <div class="toolbar-container__nav-bar">
-        <a routerLink="/home"><img id="logo" [src]="logoPath"></a>
+        <a routerLink="/home"><span id="logo"></span></a>
         <ul>
             <li><a routerLink="/home" (click)="navigate()">Home</a></li>
             <li *ngFor="let link of links">

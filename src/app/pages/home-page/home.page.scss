@@ -15,7 +15,6 @@
       height: calc(100vh - var(--nav-bar-height-mobile));
       align-items: center;
       background-position: top right;
-      padding-top: var(--nav-bar-height-mobile);
     }
 
     &:before {
@@ -61,6 +60,7 @@
         color: white;
         font-size: var(--font-size-l);
         font-family: var(--font-family-semibold);
+        cursor: pointer;
 
         margin: 1rem 0;
 
@@ -77,6 +77,16 @@
           font-size: var(--font-size-r);
         }
       }
+    }
+  }
+
+  .section {
+    padding-left: var(--padding-left-desktop);
+    padding-right: var(--padding-left-desktop);
+    max-width: 100vw;
+
+    &:nth-child(odd) {
+      background-color: var(--light-grey);
     }
   }
 }

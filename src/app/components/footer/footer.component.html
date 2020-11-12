@@ -1,1 +1,49 @@
-<p>footer works!</p>
+<footer class="footer">
+    <div class="footer-devider"></div>
+    <div class="footer-container">
+        <div *ngIf="isMobile" class="mobile-footer-text">
+            &copy; B-prints - 2020
+        </div>
+
+        <div class="desktop-container" *ngIf="!isMobile">
+            <div class="description-column">
+                <h2 class="description-column__logo">B-PRINTS</h2>
+                <div class="description-column__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                </div>
+                <div class="description-column__contact">
+                    <div class="contact__item"><span class="icon ion-ios-call"></span> 0495/40.55.99 </div>
+                    <div class="contact__item"><span class="icon ion-ios-mail"></span> bram@b-prints.be </div>
+                    <div class="contact__item"><span class="icon ion-ios-home"></span>
+                        <div>
+                            <div>Broekestraat 13 </div>
+                            <div>9667 Horebeke</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="links-column">
+                <h2>Pagina's</h2>
+                <ul>
+                    <li><a routerLink="/home">Home</a></li>
+                    <li *ngFor="let link of links">
+                        <a *ngIf="link.path" [routerLink]="link.path"> {{link.text}} </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="social-media-column">
+                <h2>Volg ons ook</h2>
+                <div class="icon ion-logo-facebook"></div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright" *ngIf="!isMobile">
+        &copy; B-prints - 2020
+    </div>
+</footer>

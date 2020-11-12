@@ -17,12 +17,12 @@ const routes: Routes = [
 		component: HomePage,
 	},
 	{
-		path: 'services',
+		path: 'diensten',
 		component: ProductsPage,
 	},
 
 	{
-		path: 'prices',
+		path: 'prijslijst',
 		component: PricePage,
 	},
 	{

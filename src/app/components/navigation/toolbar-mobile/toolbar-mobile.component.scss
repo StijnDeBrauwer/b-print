@@ -5,17 +5,24 @@
     position: fixed;
     background-color: white;
     z-index: 2;
+
     .toolbar-container__nav-bar {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         height: var(--nav-bar-height-mobile);
+        box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.24);
 
         a {
             #logo {
                 height: 65px;
-                padding-left: var(--padding-left-desktop);
+                width: 85px;
+                margin-left: var(--padding-left-desktop);
+                background-image: url("../../../../assets/images/logo_green.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center center;
             }
         }
     }

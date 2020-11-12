@@ -1,6 +1,18 @@
+.toolbar-container {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: white;
+    z-index: 2;
 
-.toolbar-container{
-    .toolbar-container__nav-bar{
+    a {
+        color: var(--main-color);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: var(--font-family-semibold);
+    }
+    .toolbar-container__nav-bar {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -8,31 +20,54 @@
         z-index: 2;
         background-color: white;
         height: var(--nav-bar-height);
+        -webkit-box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.53);
+        box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
-        #logo{
+        #logo {
             height: 85px;
-            padding-left: var(--padding-left-desktop);
+            width: 85px;
+            margin-left: var(--padding-left-desktop);
+            background-image: url("../../../../assets/images/logo_green.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+            display: inline-block;
         }
 
-        ul{
+        ul {
             list-style: none;
             display: inline-flex;
             flex-direction: row;
             margin-right: 1rem;
 
-            li{
+            li {
                 padding: 0 1rem;
-                a{
-                    color: var(--main-color);
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    font-family: var(--font-family-semibold);
-                }
             }
         }
     }
 
-    .toolbar-container__sub-menu{
+    .toolbar-container__sub-menu {
+        display: flex;
+        flex-direction: row;
+        -webkit-box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.53);
+        box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
+        .sub-menu-desktop-description {
+            flex: 1;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            background-color: var(--second-color);
+
+            a {
+                color: white;
+            }
+        }
+        .sub-menu-desktop-content {
+            flex: 1;
+            padding-left: 1rem;
+        }
     }
 }
