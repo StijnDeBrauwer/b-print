@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 import { LinkModel } from 'src/app/models/link.model';
 
 @Component({
@@ -7,16 +7,35 @@ import { LinkModel } from 'src/app/models/link.model';
 	styleUrls: ['./hamburger.component.scss'],
 })
 export class HamburgerComponent implements OnInit {
-	navOpen: boolean = false;
+	navOpen = false;
+	subMenuOpen = false;
+
+	@ViewChild('menu') menu: ElementRef;
+
 	@Input() links: LinkModel[];
+	chosenLink: LinkModel;
 
 	constructor() {}
 
 	ngOnInit(): void {}
 
-	toggle() {
+	toggle(): void {
 		this.navOpen = !this.navOpen;
 	}
 
-	navigate() {}
+	toggleSubMenu(link: LinkModel): void {
+		this.subMenuOpen = !this.subMenuOpen;
+		if (this.subMenuOpen) {
+			delete this.chosenLink;
+		}
+
+		this.chosenLink = link;
+	}
+
+	navigate(): void {
+		this.subMenuOpen = false;
+		this.navOpen = false;
+
+		this.menu.nativeElement.checked = false;
+	}
 }
