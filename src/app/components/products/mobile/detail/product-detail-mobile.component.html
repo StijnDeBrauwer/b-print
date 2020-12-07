@@ -1,0 +1,61 @@
+<section class="product-detail">
+
+    <ng-image-fullscreen-view [images]="imageArray" [imageIndex]="selectedImageIndex" [show]="showFlag"
+        (close)="closeEventHandler()"></ng-image-fullscreen-view>
+
+    <div class="image-container">
+        <div class="slideshow">
+            <slideshow [height]="'100%'" [minHeight]="'45vh'" *ngIf="imageSources.length" #slideshow
+                [showArrows]="false" [imageUrls]="imageSources" [lazyLoad]="imageSources?.length > 1"
+                [autoPlayWaitForLazyLoad]="true" [captionBackground]="'transparent'" [backgroundSize]="contain"
+                [backgroundPosition]="'center top'" [showDots]="true">
+            </slideshow>
+
+        </div>
+        <i class="icon ion-ios-qr-scanner" (click)="showLightbox(0)"></i>
+    </div>
+
+    <div class="content-container">
+        <h1> {{product?.displayName}}</h1>
+        <div class="content-container__section">
+            <h2>Omschrijving</h2>
+            <p> {{product?.description}} </p>
+        </div>
+
+        <div class="content-container__section">
+            <h2>Maten</h2>
+
+            <div class="section__size-container">
+                <div *ngFor="let size of product?.sizes" class="size-container__size">
+                    <span>{{size}}</span>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="content-container__section">
+            <h2>Kleuren</h2>
+            <div class="section__color-container">
+                <div *ngFor="let color of product?.colors" class="color-container__color">
+                    <span [matTooltip]="color.name" class="color__color"
+                        [ngStyle]="{'background-color': color.hex }"></span>
+                    <span class="color__name">{{color.name}}</span>
+
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="content-container__section">Samenstelling</h2>
+            <p *ngFor="let composition of product?.composition">{{composition}}</p>
+
+        </div>
+
+        <div class="content-container__section">
+            <h2>Geschikt voor</h2>
+            {{product?.gender}}
+        </div>
+    </div>
+
+
+</section>

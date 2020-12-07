@@ -1,1 +1,12 @@
-<p>products-page works!</p>
+<section class="products-page">
+    <div class="banner">
+        <h1>Onze diensten</h1>
+    </div>
+
+    <div class="content-container">
+        <app-product-mobile-list *ngIf="isMobile">
+        </app-product-mobile-list>
+        <app-product-desktop-list *ngIf="!isMobile" (onNavigateToDetail)="navigateToDetail($event)">
+        </app-product-desktop-list>
+    </div>
+</section>

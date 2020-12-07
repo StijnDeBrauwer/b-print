@@ -1,1 +1,65 @@
-<p>contact-page works!</p>
+<section class="contact">
+    <div class="banner">
+
+    </div>
+
+    <h1>Heeft u nog vragen?</h1>
+
+    <div class="contact__container">
+
+        <div class="contact__information-container">
+            <div class="card">
+                <mat-card-title>Informatie</mat-card-title>
+                <mat-card-content>
+                    <div class="contact__item"><span class="icon ion-ios-call"></span> 0495/40.55.99 </div>
+                    <div class="contact__item"><span class="icon ion-ios-mail"></span> bram@b-prints.be </div>
+                    <div class="contact__item"><span class="icon ion-ios-home"></span>
+                        <div>
+                            <div>Broekestraat 13 </div>
+                            <div>9667 Horebeke</div>
+                        </div>
+                    </div>
+                </mat-card-content>
+            </div>
+        </div>
+
+        <div class="contact__form-container">
+            <div class="card">
+                <mat-card-title>Contacteer ons</mat-card-title>
+                <form #form method="post" style="color: #757575;" [formGroup]="contactForm">
+                    <div>
+                        <mat-form-field appearance="standard">
+                            <mat-label>Naam</mat-label>
+                            <input matInput class="capitalize" placeholder="Name" formControlName="fromName">
+                            <mat-error>Gelieve uw naam in te geven</mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field appearance="standard">
+                            <mat-label>E-mail</mat-label>
+                            <input type="text" placeholder="Email" matInput formControlName="fromEmail">
+                            <mat-error>Gelieve een geldige e-mail in te geven</mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field appearance="standard">
+                            <mat-label>Onderwerp</mat-label>
+                            <input type="text" matInput placeholder="Subject" formControlName="subject">
+                            <mat-error>Een onderwerp is verplicht</mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div class="text-field">
+                        <mat-form-field>
+                            <mat-label>Bericht</mat-label>
+                            <textarea type="text" formControlName="message" matInput placeholder="Enter your message"
+                                aria-multiline="true"></textarea>
+                            <mat-error>Gelieve een bericht in te geven</mat-error>
+                        </mat-form-field>
+                    </div>
+                    <button id="send-button" type="submit" (click)="onSubmit()">Verzenden</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>

@@ -1,3 +1,39 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import "~@angular/material/theming";
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$b-print-primary: mat-palette($mat-indigo);
+$b-print-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$b-print-warn: mat-palette($mat-red);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$b-print-theme: mat-light-theme(
+    (
+        color: (
+            primary: $b-print-primary,
+            accent: $b-print-accent,
+            warn: $b-print-warn,
+        ),
+    )
+);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($b-print-theme);
+
 /* You can add global styles to this file, and also import other style files */
 
 @font-face {
@@ -36,6 +72,14 @@ body {
     padding: 1rem;
 }
 
+.card {
+    border-radius: 0.5rem;
+    box-shadow: 1px 0px 5px 2px var(--light-grey);
+    -webkit-box-shadow: 1px 0px 5px 2px var(--light-grey);
+    -moz-box-shadow: 1px 0px 5px 2px var(--light-grey);
+    padding: 1rem;
+}
+
 h1 {
     font-family: var(--font-family-bold);
     color: var(--main-color);
@@ -56,11 +100,6 @@ h1 {
     justify-content: center;
     align-items: center;
     padding: 10% 0;
-    margin-top: var(--nav-bar-height);
-
-    @media screen and (max-width: 768px) {
-        margin-top: var(--nav-bar-height-mobile);
-    }
 
     filter: contrast(150%) brightness(100%) grayscale(1px);
     text-align: center;
@@ -75,4 +114,13 @@ h1 {
         // background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
         opacity: 0.45;
     }
+}
+
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
 }

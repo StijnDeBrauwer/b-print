@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
+import { Router } from '@angular/router';
 import { LinkModel } from 'src/app/models/link.model';
 
 @Component({
@@ -15,7 +16,7 @@ export class HamburgerComponent implements OnInit {
 	@Input() links: LinkModel[];
 	chosenLink: LinkModel;
 
-	constructor() {}
+	constructor(private router: Router) {}
 
 	ngOnInit(): void {}
 
@@ -37,5 +38,10 @@ export class HamburgerComponent implements OnInit {
 		this.navOpen = false;
 
 		this.menu.nativeElement.checked = false;
+	}
+
+	navigateToRoute(route: LinkModel) {
+		this.router.navigate([`/${route.path}`]);
+		this.navigate();
 	}
 }

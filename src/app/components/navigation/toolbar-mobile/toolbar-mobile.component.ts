@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AppRoutes } from 'src/app/constants/routes.const';
 import { LinkModel } from 'src/app/models/link.model';
-import { routes } from '../navigation.const';
 
 @Component({
 	selector: 'app-toolbar-mobile',
@@ -24,7 +24,7 @@ export class ToolbarMobileComponent implements OnInit {
 	ngOnDestroy() {}
 
 	initRoutes() {
-		this.links = routes;
+		this.links = AppRoutes;
 	}
 
 	navigate() {

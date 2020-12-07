@@ -1,0 +1,9 @@
+<section class="product-list">
+    <div class="product-list__container">
+
+        <div class="product-list__container__card" *ngFor="let product of products"
+            (click)="navigateToDetail(product.articleNumber)">
+            <app-product-card [product]="product"></app-product-card>
+        </div>
+    </div>
+</section>

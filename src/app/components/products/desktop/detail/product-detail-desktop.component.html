@@ -1,0 +1,56 @@
+<section class="product-detail">
+    <div class="image-container">
+        <div class="slideshow">
+            <slideshow [height]="'100%'" [minHeight]="'75vh'" *ngIf="imageSources.length" #slideshow
+                [showArrows]="false" [imageUrls]="imageSources" [lazyLoad]="imageSources?.length > 1"
+                [autoPlayWaitForLazyLoad]="true" [captionBackground]="'transparent'" [showDots]="true">
+            </slideshow>
+            <i *ngIf="imageSources?.length > 1" class="material-icons" (click)="swipeLeft()">keyboard_arrow_left</i>
+            <i *ngIf="imageSources?.length > 1" class="material-icons" (click)="swipeRight()">keyboard_arrow_right</i>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <h1> {{product?.displayName}}</h1>
+        <div class="content-container__section">
+            <h2>Omschrijving</h2>
+            <p> {{product?.description}} </p>
+        </div>
+
+        <div class="content-container__section">
+            <h2>Maten</h2>
+
+            <div class="section__size-container">
+                <div *ngFor="let size of product?.sizes" class="size-container__size">
+                    <span>{{size}}</span>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="content-container__section">
+            <h2>Kleuren</h2>
+            <div class="section__color-container">
+                <div *ngFor="let color of product?.colors" class="color-container__color">
+                    <span [matTooltip]="color.name" class="color__color"
+                        [ngStyle]="{'background-color': color.hex }"></span>
+
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="content-container__section">Samenstelling</h2>
+            <ul>
+                <li *ngFor="let composition of product?.composition">{{composition}}</li>
+            </ul>
+        </div>
+
+        <div class="content-container__section">
+            <h2>Geschikt voor</h2>
+            {{product?.gender}}
+        </div>
+    </div>
+
+
+</section>

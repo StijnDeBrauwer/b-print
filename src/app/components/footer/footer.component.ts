@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ResponsiveService } from 'src/app/services/responsive/responsive.service';
-import { routes } from '../navigation/navigation.const';
 import { LinkModel } from 'src/app/models/link.model';
+import { AppRoutes } from 'src/app/constants/routes.const';
 
 @Component({
 	selector: 'app-footer',
@@ -10,7 +10,7 @@ import { LinkModel } from 'src/app/models/link.model';
 })
 export class FooterComponent implements OnInit {
 	isMobile: boolean;
-	links: Array<LinkModel> = routes;
+	links: Array<LinkModel> = AppRoutes;
 	constructor(private responsiveService: ResponsiveService) {
 		this.responsiveService.checkWidth();
 		this.responsiveService.isMobileSubject.subscribe((isMobile) => {

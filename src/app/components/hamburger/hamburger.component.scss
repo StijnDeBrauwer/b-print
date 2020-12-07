@@ -69,15 +69,16 @@ $variable-burger-animation-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
 
     p {
+        margin: 1rem 0;
         a {
             color: var(--main-color);
             text-decoration: none;
-            font-size: var(--font-size-s);
+            font-size: var(--font-size-xs);
             width: 100%;
 
             &:hover {
                 background-color: var(--second-color);
-                padding: .5rem 1rem;
+                padding: 1rem;
                 border-radius: 1rem;
             }
         }
@@ -108,8 +109,8 @@ $variable-burger-animation-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
     width: 0;
 }
 
-#menu--toggle:checked+.menu--toggle__trigger {
-    &+.menu--toggle__burger {
+#menu--toggle:checked + .menu--toggle__trigger {
+    & + .menu--toggle__burger {
         top: 35px;
         transform: rotate(45deg);
         transition: transform $variable-burger-animation-time $variable-burger-animation-function;
@@ -127,14 +128,14 @@ $variable-burger-animation-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
         }
     }
 
-    &+.menu--toggle__burger+.menu__body {
+    & + .menu--toggle__burger + .menu__body {
         @media screen and (max-width: 768px) {
             animation: checkboxCheckedAnimation $variable-menu-animation-time $variable-menu-animation-function forwards;
         }
     }
 
-    &~.menu__body .menu__body-element,
-    &~.menu__body .menu__body-link {
+    & ~ .menu__body .menu__body-element,
+    & ~ .menu__body .menu__body-link {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -142,7 +143,6 @@ $variable-burger-animation-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
         cursor: pointer;
     }
 }
-
 
 @keyframes checkboxCheckedAnimation {
     50% {

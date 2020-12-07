@@ -2,9 +2,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomePage } from '../pages/home-page/home.page';
 import { PageNotFound } from '../pages/page-not-found/page-not-found.page';
-import { PricePage } from '../pages/price-page/price.page';
 import { ProductsPage } from '../pages/products-page/products.page';
+import { PricePage } from '../pages/price-page/price.page';
 import { ContactPage } from '../pages/contact-page/contact.page';
+import { ProductDetailPage } from '../pages/product-detail-page/product-detail.page';
 
 const routes: Routes = [
 	{
@@ -20,7 +21,10 @@ const routes: Routes = [
 		path: 'diensten',
 		component: ProductsPage,
 	},
-
+	{
+		path: 'diensten/:id',
+		component: ProductDetailPage,
+	},
 	{
 		path: 'prijslijst',
 		component: PricePage,

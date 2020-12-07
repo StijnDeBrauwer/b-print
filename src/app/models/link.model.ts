@@ -1,17 +1,9 @@
-export class LinkModel {
-	public text: string;
-	public path: string;
-	public children: LinkModel[];
+import { Type } from '@angular/core';
+import { Route } from '@angular/router';
 
-	constructor(text: string, path?: string, children?: Array<LinkModel>) {
-		this.text = text;
-
-		if (path) {
-			this.path = path;
-		}
-
-		if (children) {
-			this.children = children;
-		}
-	}
+export interface LinkModel extends Route {
+	text: string;
+	path: string;
+	children?: LinkModel[];
+	component?: Type<any>;
 }

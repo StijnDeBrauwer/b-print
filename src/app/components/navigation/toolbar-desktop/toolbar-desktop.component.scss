@@ -6,6 +6,10 @@
     background-color: white;
     z-index: 2;
 
+    p {
+        margin: 1rem 0;
+    }
+
     a {
         color: var(--main-color);
         text-decoration: none;

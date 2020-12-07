@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgImageFullscreenViewModule } from 'ng-image-fullscreen-view';
 
 import { AppRoutingModule } from './modules/app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,17 @@ import { ContactPage } from './pages/contact-page/contact.page';
 import { PageNotFound } from './pages/page-not-found/page-not-found.page';
 import { FooterComponent } from './components/footer/footer.component';
 import { HamburgerComponent } from './components/hamburger/hamburger.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
+import { ProductCardComponent } from './components/products/card/product-card.component';
+import { ProductDetailDesktopComponent } from './components/products/desktop/detail/product-detail-desktop.component';
+import { ProductListDesktopComponent } from './components/products/desktop/list/product-list-desktop.component';
+import { ProductDetailMobileComponent } from './components/products/mobile/detail/product-detail-mobile.component';
+import { ProductListMobileComponent } from './components/products/mobile/list/product-list-mobile.component';
+import { ProductDetailPage } from './pages/product-detail-page/product-detail.page';
+import { SlideshowModule } from 'ng-simple-slideshow';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
 	declarations: [
@@ -26,8 +38,26 @@ import { HamburgerComponent } from './components/hamburger/hamburger.component';
 		PageNotFound,
 		FooterComponent,
 		HamburgerComponent,
+		ProductCardComponent,
+		ProductDetailDesktopComponent,
+		ProductListDesktopComponent,
+		ProductDetailMobileComponent,
+		ProductListMobileComponent,
+		ProductDetailPage,
 	],
-	imports: [BrowserModule, AppRoutingModule, FormsModule],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		FormsModule,
+		ReactiveFormsModule,
+		NoopAnimationsModule,
+		MatInputModule,
+		MatCardModule,
+		MatTooltipModule,
+		SlideshowModule,
+		NgImageFullscreenViewModule,
+	],
+	schemas: [CUSTOM_ELEMENTS_SCHEMA],
 	providers: [],
 	bootstrap: [AppComponent],
 })

@@ -1,0 +1,10 @@
+.product-list {
+    .product-list__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .product-list__container__card {
+            margin: 1vw 1vw;
+        }
+    }
+}

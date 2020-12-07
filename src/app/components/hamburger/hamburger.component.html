@@ -11,7 +11,8 @@
         <li class="menu__body-element" *ngFor="let link of links">
             <a class="menu__body-link" *ngIf="link.path && !link.children" routerLinkActive="active-link"
                 (click)="navigate()" [routerLink]="link.path"> {{link.text}} </a>
-            <a *ngIf="link.children" (click)="toggleSubMenu(link)">{{link.text}}</a>
+            <a *ngIf="link.children && !subMenuOpen" (click)="toggleSubMenu(link)">{{link.text}}</a>
+            <a *ngIf="link.children && subMenuOpen" (click)="navigateToRoute(link)">{{link.text}}</a>
             <div *ngIf="link === chosenLink" class="sub-menu" [ngClass]="{'open': subMenuOpen}">
                 <p *ngFor="let child of link.children">
                     <a [routerLink]="child.path" routerLinkActive="active-link" (click)="navigate()">{{child.text}}</a>
