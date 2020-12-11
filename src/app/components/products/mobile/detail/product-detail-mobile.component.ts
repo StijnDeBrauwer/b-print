@@ -27,22 +27,22 @@ export class ProductDetailMobileComponent implements OnInit {
 
 	get imageSources(): string[] {
 		if (this.product.imagePaths.length < 2) {
-			return [`../../../../../assets/images/products/${this.product.imagePaths[0]}`];
+			return [`./assets/images/products/${this.product.imagePaths[0]}`];
 		}
 
 		return this.product.imagePaths.map((img: string) => {
-			const path: string = `../../../../../assets/images/products/${img}`;
+			const path: string = `./assets/images/products/${img}`;
 			return path;
 		});
 	}
 
 	get imageArray(): { image: string }[] {
 		if (this.product.imagePaths.length < 2) {
-			return [{ image: `../../../../../assets/images/products/${this.product.imagePaths[0]}` }];
+			return [{ image: `./assets/images/products/${this.product.imagePaths[0]}` }];
 		}
 
 		return this.product.imagePaths.map((img: string) => {
-			const path: { image: string } = { image: `../../../../../assets/images/products/${img}` };
+			const path: { image: string } = { image: `./assets/images/products/${img}` };
 			return path;
 		});
 	}

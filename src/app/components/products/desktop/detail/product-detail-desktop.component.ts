@@ -18,11 +18,11 @@ export class ProductDetailDesktopComponent implements OnInit {
 
 	get imageSources(): string[] {
 		if (this.product.imagePaths.length < 2) {
-			return [`../../../../../assets/images/products/${this.product.imagePaths[0]}`];
+			return [`./assets/images/products/${this.product.imagePaths[0]}`];
 		}
 
 		return this.product.imagePaths.map((img: string) => {
-			const path: string = `../../../../../assets/images/products/${img}`;
+			const path: string = `./assets/images/products/${img}`;
 			return path;
 		});
 	}

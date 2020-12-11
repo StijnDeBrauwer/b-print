@@ -16,7 +16,7 @@ export class ToolbarMobileComponent implements OnInit {
 
 	constructor() {
 		this.initRoutes();
-		this.logoPath = '../../../../assets/images/logo_green.png';
+		this.logoPath = './assets/images/logo_green.png';
 	}
 
 	ngOnInit() {}

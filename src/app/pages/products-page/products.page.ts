@@ -23,7 +23,7 @@ export class ProductsPage implements OnInit {
 
 	get textileCard(): { imagePath: string; description: string; backgroundColor: string } {
 		return {
-			imagePath: '../../../assets/images/products/cards/textile-card.png',
+			imagePath: './assets/images/products/cards/textile-card.png',
 			description: 'Kledij',
 			backgroundColor: 'f6f2ca',
 		};
@@ -31,7 +31,7 @@ export class ProductsPage implements OnInit {
 
 	get bachesAndFlagsCard(): { imagePath: string; description: string; backgroundColor: string } {
 		return {
-			imagePath: '../../../assets/images/products/cards/lettering-card.png',
+			imagePath: './assets/images/products/cards/lettering-card.png',
 			description: 'Opdruk en borduren',
 			backgroundColor: '',
 		};
@@ -39,7 +39,7 @@ export class ProductsPage implements OnInit {
 
 	get stichCard(): { imagePath: string; description: string; backgroundColor: string } {
 		return {
-			imagePath: '../../../assets/images/products/cards/baches-card.png',
+			imagePath: './assets/images/products/cards/baches-card.png',
 			description: 'Baches en vlaggen',
 			backgroundColor: '',
 		};

@@ -18,7 +18,7 @@ export class ToolbarDesktopComponent implements OnInit {
 	// whether the nav should be transparent
 	isTransparent: boolean;
 	// the path to the logo (we have a white or a colored logo)
-	logoPath: string = '../../../../assets/images/logo_green.png';
+	logoPath: string = './assets/images/logo_green.png';
 
 	isTransparentSubject: any;
 	isHomepageSubject: any;
