@@ -3,11 +3,11 @@ import { Products } from 'src/app/constants/product.const';
 import { Product } from 'src/app/models/product.model';
 
 @Component({
-	selector: 'app-product-desktop-list',
-	templateUrl: './product-list-desktop.component.html',
-	styleUrls: ['./product-list-desktop.component.scss'],
+	selector: 'app-product-list',
+	templateUrl: './product-list.component.html',
+	styleUrls: ['./product-list.component.scss'],
 })
-export class ProductListDesktopComponent implements OnInit {
+export class ProductListComponent implements OnInit {
 	@Output() onNavigateToDetail: EventEmitter<string> = new EventEmitter();
 	products: Product[] = Products;
 
@@ -16,7 +16,6 @@ export class ProductListDesktopComponent implements OnInit {
 	ngOnInit() {}
 
 	navigateToDetail(id: string) {
-		console.log('pressed', id);
 		this.onNavigateToDetail.emit(id);
 	}
 }

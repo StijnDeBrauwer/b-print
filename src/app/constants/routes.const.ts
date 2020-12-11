@@ -11,23 +11,23 @@ export const AppRoutes: LinkModel[] = [
 		children: [
 			{
 				text: 'Textiel',
-				path: '',
+				path: 'textiel',
 			},
 			{
 				text: 'Belettering',
-				path: '',
+				path: 'belettering',
 			},
 			{
 				text: 'Stikkers',
-				path: '',
+				path: 'stickers',
 			},
 			{
 				text: 'Baches en vlaggen',
-				path: '',
+				path: 'baches-en-vlaggen',
 			},
 			{
 				text: 'Canvassen',
-				path: '',
+				path: 'canvassen',
 			},
 		],
 	},

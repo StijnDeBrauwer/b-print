@@ -4,9 +4,48 @@
     </div>
 
     <div class="content-container">
-        <app-product-mobile-list *ngIf="isMobile">
-        </app-product-mobile-list>
-        <app-product-desktop-list *ngIf="!isMobile" (onNavigateToDetail)="navigateToDetail($event)">
-        </app-product-desktop-list>
+
+        <div class="content-container__section texitle">
+            <div class="textile__title">
+                <h1>Textiel</h1>
+                <p>Hier kunt u kiezen uit een aantal stijlvolle shirts, hoodies, topjes of sportkledij om te
+                    bedrukken.
+                </p>
+            </div>
+
+            <div class="textile__products">
+
+                <div class="products__product" (click)="navigateToTextilePage()">
+                    <!-- Textiel -->
+                    <app-category-card [imagePath]="textileCard.imagePath" [description]="textileCard.description"
+                        [backgroundColor]="textileCard.backgroundColor">
+                    </app-category-card>
+                </div>
+
+                <div class="products__product">
+                    <!-- Bedrukking (opdruk en borduren) -->
+                    <app-category-card [imagePath]="bachesAndFlagsCard.imagePath"
+                        [description]="bachesAndFlagsCard.description"
+                        [backgroundColor]="bachesAndFlagsCard.backgroundColor">
+                    </app-category-card>
+                </div>
+
+                <div class="products__product">
+                    <!-- Baches -->
+                    <app-category-card [imagePath]="stichCard.imagePath" [description]="stichCard.description"
+                        [backgroundColor]="stichCard.backgroundColor">
+                    </app-category-card>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-container__section">
+            <h2>Stickers</h2>
+        </div>
+
+
+        <div class="content-container__section">
+            <h2>Canvassen</h2>
+        </div>
     </div>
 </section>

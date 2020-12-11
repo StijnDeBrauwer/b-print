@@ -6,6 +6,10 @@ import { ProductsPage } from '../pages/products-page/products.page';
 import { PricePage } from '../pages/price-page/price.page';
 import { ContactPage } from '../pages/contact-page/contact.page';
 import { ProductDetailPage } from '../pages/product-detail-page/product-detail.page';
+import { TextilePage } from '../pages/textile-page/textile.page';
+import { StickersPage } from '../pages/stickers-page/stickers.page';
+import { BachesAndFlagsPage } from '../pages/baches-and-flags-page/baches-and-flags.page';
+import { CanvassesPage } from '../pages/canvasses/canvasses.page';
 
 const routes: Routes = [
 	{
@@ -22,8 +26,24 @@ const routes: Routes = [
 		component: ProductsPage,
 	},
 	{
-		path: 'diensten/:id',
+		path: 'diensten/detail/:id',
 		component: ProductDetailPage,
+	},
+	{
+		path: 'textiel',
+		component: TextilePage,
+	},
+	{
+		path: 'stickers',
+		component: StickersPage,
+	},
+	{
+		path: 'baches-en-vlaggen',
+		component: BachesAndFlagsPage,
+	},
+	{
+		path: 'canvassen',
+		component: CanvassesPage,
 	},
 	{
 		path: 'prijslijst',
