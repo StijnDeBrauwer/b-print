@@ -18,8 +18,13 @@
     }
 
     .description {
-        margin-left: var(--padding-left-desktop);
+        margin: 0 calc(var(--padding-left-desktop) * 2);
         padding: 2rem 0;
+        font-size: var(--font-size-l);
+        line-height: 1.2;
+        font-family: var(--font-family-semibold);
+
+        text-align: center;
         @media screen and (max-width: 768px) {
             font-size: var(--font-size-r);
             margin-bottom: 0;

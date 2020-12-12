@@ -9,7 +9,7 @@
             <div class="textile__title">
                 <h1>Textiel</h1>
                 <p>Hier kunt u kiezen uit een aantal stijlvolle shirts, hoodies, topjes of sportkledij om te
-                    bedrukken.
+                    bedrukken. Je kan bestellen via onze <a routerLink="/contact">contact pagina</a>.
                 </p>
             </div>
 
@@ -44,7 +44,7 @@
                 <h1>Stikkers</h1>
                 <p>
                     Naast de verkoop van shirts en andere kledij, bieden we `op maat gemaakte` stikkers aan!
-                    Deze stickers bieden we aan:
+                    Volgende stickers bieden we aan:
                 </p>
 
                 <ul>
@@ -54,19 +54,38 @@
                     <li>Vloer stikkers</li>
                     <li>Behangpapier</li>
                 </ul>
-                <p>
-                    Ontdek nu welke diensten we precies aanbieden.
-                </p>
+
+
+                <div class="cta" (click)="navigateToStikkers()">
+                    Ontdek deze diensten
+                    <span class="icon ion-ios-arrow-forward"></span>
+                </div>
             </div>
 
             <div class="section__image">
-                <img src="../../../assets/images/products/cards/sitckers-card.jpg" />
+                <img src="./assets/images/products/cards/sitckers-card.jpg" />
             </div>
         </div>
 
 
         <div class="content-container__section">
-            <h1>Promo's</h1>
+            <div class="section__image">
+                <img src="./assets/images/products/cards/specialties-card.jpg" />
+            </div>
+            <div class="section__content">
+                <h1>Specialiteiten</h1>
+
+                <p>
+                    We hebben natuurlijk ook onze specialisaties zoals vrijgezellen kledij, sportclubs en sponsoringen.
+                    Wil je hier meer over weten?
+                </p>
+
+                <div class="cta" (click)="navigateToSpecials()">
+                    Ontdek onze specialiteiten
+                    <span class="icon ion-ios-arrow-forward"></span>
+                </div>
+
+            </div>
         </div>
     </div>
 </section>

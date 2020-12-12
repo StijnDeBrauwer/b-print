@@ -22,25 +22,68 @@
 
         .content-container__section {
             padding: 5vh 5vw;
-            // padding: 5vh 0 5vh 5vw;
             display: flex;
             flex-direction: row;
+
+            @media screen and (max-width: 768px) {
+                text-align: center;
+                flex-direction: column;
+            }
+
+            .cta {
+                display: inline-block;
+                color: white;
+                font-size: var(--font-size-s);
+                font-family: var(--font-family-semibold);
+                cursor: pointer;
+                text-align: left;
+                z-index: 2;
+
+                margin: 1rem 0;
+
+                background-color: var(--second-color);
+                border-radius: 16px;
+                box-shadow: 1px -1px 1px 0px var(--second-color);
+                padding: 0.5rem;
+            }
 
             .section__content {
                 flex-grow: 1;
             }
             .section__image {
                 flex-shrink: 1;
+                margin-right: 2rem;
+                @media screen and (max-width: 768px) {
+                    margin-right: 0;
+                }
+
+                img {
+                    @media screen and (max-width: 768px) {
+                        width: 45vw;
+                    }
+                    width: 20vw;
+                }
             }
 
             &:nth-child(even) {
                 background-color: var(--light-grey);
+                .section__image {
+                    @media screen and (max-width: 768px) {
+                        margin-left: 0;
+                    }
+                    margin-left: 2rem;
+                }
             }
 
             &.texitle {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
+                @media screen and (max-width: 768px) {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
 
                 .textile__title {
                     flex-shrink: 1;
@@ -48,6 +91,12 @@
                     width: calc(
                         100vw - 5vw - 5vw - 45vw - 3rem
                     ); // full widht - padding left - padding right - cards width - space between cards
+
+                    @media screen and (max-width: 768px) {
+                        display: inline-block;
+                        width: 85vw;
+                        text-align: center;
+                    }
 
                     h1 {
                         font-family: var(--font-family-semibold);

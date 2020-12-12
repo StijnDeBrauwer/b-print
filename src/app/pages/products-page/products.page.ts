@@ -21,6 +21,14 @@ export class ProductsPage implements OnInit {
 		this.router.navigate(['/textiel']);
 	}
 
+	navigateToStikkers() {
+		this.router.navigate(['/stickers']);
+	}
+
+	navigateToSpecials() {
+		this.router.navigate(['/specialiteiten']);
+	}
+
 	get textileCard(): { imagePath: string; description: string; backgroundColor: string } {
 		return {
 			imagePath: './assets/images/products/cards/textile-card.png',

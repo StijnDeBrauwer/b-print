@@ -26,10 +26,15 @@ export const AppRoutes: LinkModel[] = [
 				path: 'baches-en-vlaggen',
 			},
 			{
-				text: "Promo's",
-				path: 'promos',
+				text: 'Onze specialiteiten',
+				path: 'specialiteiten',
 			},
 		],
+	},
+	{
+		text: 'Realisaties',
+		path: 'realisaties',
+		component: PricePage,
 	},
 	{
 		text: 'PrijsLijst',

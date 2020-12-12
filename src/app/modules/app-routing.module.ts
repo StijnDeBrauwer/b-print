@@ -9,7 +9,8 @@ import { ProductDetailPage } from '../pages/product-detail-page/product-detail.p
 import { TextilePage } from '../pages/textile-page/textile.page';
 import { StickersPage } from '../pages/stickers-page/stickers.page';
 import { BachesAndFlagsPage } from '../pages/baches-and-flags-page/baches-and-flags.page';
-import { PromosPage } from '../pages/promos-page/promos.page';
+import { SpecialtiesPage } from '../pages/specialties-page/specialties.page';
+import { RealizationsPage } from '../pages/realizations-page/realizations.page';
 
 const routes: Routes = [
 	{
@@ -42,8 +43,12 @@ const routes: Routes = [
 		component: BachesAndFlagsPage,
 	},
 	{
-		path: 'promos',
-		component: PromosPage,
+		path: 'specialiteiten',
+		component: SpecialtiesPage,
+	},
+	{
+		path: 'realisaties',
+		component: RealizationsPage,
 	},
 	{
 		path: 'prijslijst',

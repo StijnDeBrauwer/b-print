@@ -3,17 +3,27 @@
         position: relative;
         width: 15vw;
         height: 25vh;
-        // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         overflow: hidden;
         cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media screen and (max-width: 768px) {
+            width: 25vw;
+            min-height: 25vh;
+            max-height: 30vh;
+            height: unset;
+        }
         .image-container__img {
             height: 85%;
             width: 85%;
             margin: 1rem 0;
             padding-bottom: 1rem;
+
+            @media screen and (max-width: 768px) {
+                padding-bottom: 2.5rem;
+            }
         }
         .category-card__description {
             position: absolute;
@@ -26,6 +36,13 @@
             justify-content: flex-end;
             align-items: flex-start;
             font-family: var(--font-family-semibold);
+            align-self: flex-end;
+
+            @media screen and (max-width: 768px) {
+                font-size: var(--font-size-xs);
+                left: 0.5rem;
+                right: 0.5rem;
+            }
         }
     }
 }
