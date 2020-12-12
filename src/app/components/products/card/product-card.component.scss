@@ -1,6 +1,9 @@
 .product-card {
     display: flex;
     width: 15vw;
+    @media screen and (max-width: 768px) {
+        width: 35vw;
+    }
     background-color: white;
     flex-direction: column;
     border-radius: 1rem;

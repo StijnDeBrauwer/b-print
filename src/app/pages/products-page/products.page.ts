@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Products } from 'src/app/constants/product.const';
-import { ResponsiveService } from 'src/app/services/responsive/responsive.service';
 
 @Component({
 	selector: 'app-products-page',
@@ -21,7 +19,11 @@ export class ProductsPage implements OnInit {
 		this.router.navigate(['/textiel']);
 	}
 
-	navigateToStikkers() {
+	navigateToPrintingPage() {
+		this.router.navigate(['/bedrukkingen']);
+	}
+
+	navigateToStickers() {
 		this.router.navigate(['/stickers']);
 	}
 
@@ -37,15 +39,15 @@ export class ProductsPage implements OnInit {
 		};
 	}
 
-	get bachesAndFlagsCard(): { imagePath: string; description: string; backgroundColor: string } {
+	get printingCard(): { imagePath: string; description: string; backgroundColor: string } {
 		return {
 			imagePath: './assets/images/products/cards/lettering-card.png',
-			description: 'Opdruk en borduren',
+			description: 'Bedrukkingen',
 			backgroundColor: '',
 		};
 	}
 
-	get stichCard(): { imagePath: string; description: string; backgroundColor: string } {
+	get bachesAndFlagsCard(): { imagePath: string; description: string; backgroundColor: string } {
 		return {
 			imagePath: './assets/images/products/cards/baches-card.png',
 			description: 'Baches en vlaggen',

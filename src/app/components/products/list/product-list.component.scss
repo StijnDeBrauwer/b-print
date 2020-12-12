@@ -3,6 +3,11 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+
+        @media screen and (max-width: 768px) {
+            align-items: center;
+            justify-content: center;
+        }
         .product-list__container__card {
             margin: 1vw 1vw;
         }

@@ -46,6 +46,10 @@ export class ToolbarDesktopComponent implements OnInit {
 		this.links = AppRoutes;
 	}
 
+	onOutsideClick() {
+		this.navigate();
+	}
+
 	navigate() {
 		this.subMenuOpen = false;
 		this.chosenLink = null;

@@ -22,18 +22,18 @@
                     </app-category-card>
                 </div>
 
-                <div class="products__product lettering ">
+                <div class="products__product lettering" (click)="navigateToPrintingPage()">
                     <!-- Bedrukking (opdruk en borduren) -->
-                    <app-category-card [imagePath]="bachesAndFlagsCard.imagePath"
-                        [description]="bachesAndFlagsCard.description"
-                        [backgroundColor]="bachesAndFlagsCard.backgroundColor">
+                    <app-category-card [imagePath]="printingCard.imagePath" [description]="printingCard.description"
+                        [backgroundColor]="printingCard.backgroundColor">
                     </app-category-card>
                 </div>
 
                 <div class="products__product stiches">
                     <!-- Baches -->
-                    <app-category-card [imagePath]="stichCard.imagePath" [description]="stichCard.description"
-                        [backgroundColor]="stichCard.backgroundColor">
+                    <app-category-card [imagePath]="bachesAndFlagsCard.imagePath"
+                        [description]="bachesAndFlagsCard.description"
+                        [backgroundColor]="bachesAndFlagsCard.backgroundColor">
                     </app-category-card>
                 </div>
             </div>
@@ -41,9 +41,9 @@
 
         <div class="content-container__section">
             <div class="section__content">
-                <h1>Stikkers</h1>
+                <h1>Stickers</h1>
                 <p>
-                    Naast de verkoop van shirts en andere kledij, bieden we `op maat gemaakte` stikkers aan!
+                    Naast de verkoop van shirts en andere kledij, bieden we `op maat gemaakte` stickers aan!
                     Volgende stickers bieden we aan:
                 </p>
 
@@ -51,12 +51,12 @@
                     <li>Autostickers</li>
                     <li>Raam decoratie</li>
                     <li>Carwraps</li>
-                    <li>Vloer stikkers</li>
+                    <li>Vloer stickers</li>
                     <li>Behangpapier</li>
                 </ul>
 
 
-                <div class="cta" (click)="navigateToStikkers()">
+                <div class="cta" (click)="navigateToStickers()">
                     Ontdek deze diensten
                     <span class="icon ion-ios-arrow-forward"></span>
                 </div>

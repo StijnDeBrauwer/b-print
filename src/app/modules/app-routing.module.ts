@@ -11,6 +11,7 @@ import { StickersPage } from '../pages/stickers-page/stickers.page';
 import { BachesAndFlagsPage } from '../pages/baches-and-flags-page/baches-and-flags.page';
 import { SpecialtiesPage } from '../pages/specialties-page/specialties.page';
 import { RealizationsPage } from '../pages/realizations-page/realizations.page';
+import { PrintingPage } from '../pages/printing-page/printing.page';
 
 const routes: Routes = [
 	{
@@ -33,6 +34,10 @@ const routes: Routes = [
 	{
 		path: 'textiel',
 		component: TextilePage,
+	},
+	{
+		path: 'bedrukkingen',
+		component: PrintingPage,
 	},
 	{
 		path: 'stickers',

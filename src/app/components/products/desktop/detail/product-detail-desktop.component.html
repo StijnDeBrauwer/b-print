@@ -5,8 +5,9 @@
                 [showArrows]="false" [imageUrls]="imageSources" [lazyLoad]="imageSources?.length > 1"
                 [autoPlayWaitForLazyLoad]="true" [captionBackground]="'transparent'" [showDots]="true">
             </slideshow>
-            <i *ngIf="imageSources?.length > 1" class="material-icons" (click)="swipeLeft()">keyboard_arrow_left</i>
-            <i *ngIf="imageSources?.length > 1" class="material-icons" (click)="swipeRight()">keyboard_arrow_right</i>
+            <div *ngIf="imageSources?.length > 1" class="material-icons" (click)="swipeLeft()">keyboard_arrow_left</div>
+            <div *ngIf="imageSources?.length > 1" class="material-icons" (click)="swipeRight()">keyboard_arrow_right
+            </div>
         </div>
     </div>
 

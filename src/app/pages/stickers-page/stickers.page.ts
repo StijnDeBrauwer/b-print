@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { ResponsiveService } from 'src/app/services/responsive/responsive.service';
 
 @Component({
 	selector: 'app-stickers-page',

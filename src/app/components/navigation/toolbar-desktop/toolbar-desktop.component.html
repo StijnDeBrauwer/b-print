@@ -1,4 +1,4 @@
-<section class="toolbar-container" [ngClass]="{'transparent': isTransparent}">
+<section class="toolbar-container" [ngClass]="{'transparent': isTransparent}" (clickOutside)="onOutsideClick()">
     <div class="toolbar-container__nav-bar">
         <a routerLink="/home"><span id="logo"></span></a>
         <ul>

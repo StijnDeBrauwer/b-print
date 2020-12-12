@@ -1,13 +1,17 @@
-.products-page {
+.stickers-page {
     .banner {
         background-size: cover !important;
-        background: url("../../../assets/images/products/products.jpg") center top;
+        background: url("../../../assets/images/stickers/stickers.jpeg") left center;
         h1 {
             color: white;
             z-index: 1;
             font-size: var(--font-size-xl);
             font-family: var(--font-family-semibold);
             text-shadow: -1px 1px 2px var(--main-color);
+
+            @media screen and (max-width: 768px) {
+                font-size: var(--font-size-l);
+            }
         }
 
         &:before {

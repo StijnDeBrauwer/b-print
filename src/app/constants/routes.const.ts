@@ -2,6 +2,7 @@ import { LinkModel } from 'src/app/models/link.model';
 import { ContactPage } from '../pages/contact-page/contact.page';
 import { PricePage } from '../pages/price-page/price.page';
 import { ProductsPage } from '../pages/products-page/products.page';
+import { RealizationsPage } from '../pages/realizations-page/realizations.page';
 
 export const AppRoutes: LinkModel[] = [
 	{
@@ -14,11 +15,11 @@ export const AppRoutes: LinkModel[] = [
 				path: 'textiel',
 			},
 			{
-				text: 'Belettering',
-				path: 'belettering',
+				text: 'Bedrukkingen',
+				path: 'bedrukkingen',
 			},
 			{
-				text: 'Stikkers',
+				text: 'Stickers',
 				path: 'stickers',
 			},
 			{
@@ -34,7 +35,7 @@ export const AppRoutes: LinkModel[] = [
 	{
 		text: 'Realisaties',
 		path: 'realisaties',
-		component: PricePage,
+		component: RealizationsPage,
 	},
 	{
 		text: 'PrijsLijst',

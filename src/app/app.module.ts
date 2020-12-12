@@ -30,6 +30,8 @@ import { BachesAndFlagsPage } from './pages/baches-and-flags-page/baches-and-fla
 import { SpecialtiesPage } from './pages/specialties-page/specialties.page';
 import { RealizationsPage } from './pages/realizations-page/realizations.page';
 import { CategoryCardComponent } from './components/category-card/category-card.component';
+import { PrintingPage } from './pages/printing-page/printing.page';
+import { ClickOutsideDirective } from './directives/clickOutside.directive';
 
 @NgModule({
 	declarations: [
@@ -54,6 +56,8 @@ import { CategoryCardComponent } from './components/category-card/category-card.
 		SpecialtiesPage,
 		CategoryCardComponent,
 		RealizationsPage,
+		PrintingPage,
+		ClickOutsideDirective,
 	],
 	imports: [
 		BrowserModule,
