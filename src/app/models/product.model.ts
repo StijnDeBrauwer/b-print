@@ -29,7 +29,7 @@ export enum ProductType {
 	Lettering = 'Belettering',
 	Stickers = 'Stickers',
 	BachesAndFlags = 'Bachen en vlaggen',
-	Canvasses = 'Canvassen',
+	Promos = 'Promos',
 }
 
 export enum SubProductType {
@@ -38,7 +38,7 @@ export enum SubProductType {
 	ShirtSlim = 'Shirt Slim Fit',
 	ShirtBasic = 'Shirt Basic',
 	Shirt = 'T-Shirt',
-	SportShirt = 'SportShirts',
+	SportShirt = 'Sport Shirts',
 	Top = 'Topjes',
 }
 

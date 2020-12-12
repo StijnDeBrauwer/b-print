@@ -1,0 +1,142 @@
+.price-page {
+    .banner {
+        background-size: cover;
+        background: url("../../../assets/images/price/price-banner.jpeg") 65% 65%;
+        background-repeat: no-repeat;
+        h1 {
+            color: white;
+            z-index: 1;
+            font-size: var(--font-size-xl);
+            font-family: var(--font-family-semibold);
+            text-shadow: -1px 1px 2px var(--main-color);
+        }
+
+        &:before {
+            background-image: linear-gradient(to bottom right, #002f4b, var(--main-color));
+            opacity: 0.5;
+        }
+    }
+
+    .description {
+        margin-left: var(--padding-left-desktop);
+        padding: 2rem 0;
+        @media screen and (max-width: 768px) {
+            font-size: var(--font-size-r);
+            margin-bottom: 0;
+            padding-top: 2rem;
+            padding-bottom: 0;
+            text-align: center;
+        }
+    }
+
+    .price-page__content-container {
+        margin: 1rem var(--padding-left-desktop);
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .content-container__item {
+            display: inline;
+            margin: 0 1rem;
+            padding: 1rem;
+            width: 20vw;
+            height: auto;
+            border-radius: 1rem;
+            box-shadow: 7px 7px 21px -5px rgba(0, 0, 0, 0.75);
+            text-align: center;
+
+            @media screen and (max-width: 768px) {
+                width: 75vw;
+                margin: 1rem 0;
+            }
+
+            &.textile {
+                h1 {
+                    background: linear-gradient(0deg, rgba(195, 173, 34, 1) 0%, rgba(253, 187, 45, 1) 100%);
+                }
+
+                .item__content {
+                    background: linear-gradient(0deg, rgba(195, 173, 34, 1) 0%, rgba(255, 217, 134, 1) 100%);
+                    .content-container__price {
+                        background: linear-gradient(0deg, rgba(195, 173, 34, 1) 0%, rgba(253, 187, 45, 1) 100%);
+                    }
+                }
+            }
+
+            &.lettering {
+                h1 {
+                    background: linear-gradient(0deg, rgba(130, 46, 89, 1) 0%, rgba(205, 57, 141, 1) 100%);
+                }
+
+                .item__content {
+                    background: linear-gradient(0deg, rgba(205, 57, 141, 1) 0%, rgba(179, 132, 156, 1) 100%);
+                    // background: linear-gradient(0deg, rgba(179, 132, 156, 1) 0%, rgba(205, 57, 141, 1) 100%);
+                    .content-container__price {
+                        background: linear-gradient(0deg, rgba(130, 46, 89, 1) 0%, rgba(205, 57, 141, 1) 100%);
+                    }
+                }
+            }
+
+            &.stiches {
+                h1 {
+                    background: linear-gradient(0deg, rgba(110, 110, 110, 1) 0%, rgba(196, 196, 196, 1) 100%);
+                }
+                .item__content {
+                    background: linear-gradient(0deg, rgba(110, 110, 110, 1) 0%, rgba(230, 230, 230, 1) 100%);
+                    .content-container__price {
+                        background: linear-gradient(0deg, rgba(110, 110, 110, 1) 0%, rgba(196, 196, 196, 1) 100%);
+                    }
+                }
+            }
+
+            h1 {
+                color: white;
+                text-transform: uppercase;
+                padding: 1rem 0;
+                border-radius: 1rem;
+                margin-bottom: 0;
+                text-shadow: -1px 1px 2px var(--main-color);
+                @media screen and (max-width: 768px) {
+                    font-size: var(--font-size-r);
+                    margin-bottom: 0;
+                }
+            }
+
+            .item__content {
+                flex-shrink: 1;
+                flex-grow: 0;
+                margin: calc(1rem + 25px) 0;
+                position: relative;
+                border-radius: 1rem;
+                padding: 2rem;
+                margin-right: 15px;
+                text-align: left;
+                font-size: var(--font-size-s);
+                color: white;
+                @media screen and (max-width: 768px) {
+                    font-size: var(--font-size-xs);
+                }
+
+                .content-container__price {
+                    position: absolute;
+                    top: -25px;
+                    right: -15px;
+                    font-family: var(--font-family-semibold);
+                    width: 65px;
+                    height: 65px;
+                    border-radius: 65px;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

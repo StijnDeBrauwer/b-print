@@ -1,7 +1,46 @@
 <section class="textile-page">
 
     <div class="content-container">
-        <app-product-list (onNavigateToDetail)="navigateToDetail($event)">
+        <h1>T-Shirts</h1>
+        <app-product-list [products]="tShirts" (onNavigateToDetail)="navigateToDetail($event)">
+        </app-product-list>
+    </div>
+
+    <div class="content-container">
+        <h1>Hoodies</h1>
+        <app-product-list [products]="hoodies" (onNavigateToDetail)="navigateToDetail($event)">
+        </app-product-list>
+    </div>
+
+    <div class="content-container">
+        <h1>Sport Polo's</h1>
+        <app-product-list [products]="sportPolos" (onNavigateToDetail)="navigateToDetail($event)">
+        </app-product-list>
+    </div>
+
+    <div class="content-container">
+        <h1>Slim Fit Shirts</h1>
+        <app-product-list [products]="slimFitShirts" (onNavigateToDetail)="navigateToDetail($event)">
+        </app-product-list>
+    </div>
+
+    <div class="content-container">
+        <h1>Basic Shirts</h1>
+        <app-product-list [products]="basicShirts" (onNavigateToDetail)="navigateToDetail($event)">
+        </app-product-list>
+    </div>
+
+
+
+    <div class="content-container">
+        <h1>Sport Shirts</h1>
+        <app-product-list [products]="sportShirt" (onNavigateToDetail)="navigateToDetail($event)">
+        </app-product-list>
+    </div>
+
+    <div class="content-container">
+        <h1>Topjes</h1>
+        <app-product-list [products]="tops" (onNavigateToDetail)="navigateToDetail($event)">
         </app-product-list>
     </div>
 

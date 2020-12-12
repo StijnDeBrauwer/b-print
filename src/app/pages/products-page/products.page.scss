@@ -1,4 +1,5 @@
 .products-page {
+    font-family: var(--font-family-regular);
     .banner {
         background-size: cover !important;
         background: url("../../../assets/images/products/products.jpg") center top;
@@ -20,12 +21,25 @@
         margin-top: 1rem;
 
         .content-container__section {
-            margin: 5vh 5vw;
+            padding: 5vh 5vw;
+            // padding: 5vh 0 5vh 5vw;
+            display: flex;
+            flex-direction: row;
+
+            .section__content {
+                flex-grow: 1;
+            }
+            .section__image {
+                flex-shrink: 1;
+            }
+
+            &:nth-child(even) {
+                background-color: var(--light-grey);
+            }
 
             &.texitle {
                 display: flex;
                 flex-direction: row;
-                width: 100%;
                 align-items: center;
 
                 .textile__title {
@@ -42,7 +56,7 @@
 
                     p {
                         font-family: var(--font-family-regular);
-                        font-size: var(--font-size-xs);
+                        font-size: var(--font-size-s);
                     }
                 }
 
@@ -53,6 +67,60 @@
 
                     .products__product {
                         margin: 0 1rem;
+                        position: relative;
+
+                        &.textile {
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                bottom: 0;
+                                left: 0;
+                                opacity: 0.1;
+                                z-index: 0;
+                                background-image: linear-gradient(
+                                    90deg,
+                                    rgba(255, 206, 102, 0.9822303921568627) 11%,
+                                    rgba(255, 234, 51, 1) 59%
+                                );
+                            }
+                        }
+                        &.lettering {
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                bottom: 0;
+                                left: 0;
+                                opacity: 0.1;
+                                z-index: 0;
+                                background: linear-gradient(
+                                    90deg,
+                                    rgba(255, 102, 160, 0.9822303921568627) 11%,
+                                    rgba(255, 51, 88, 0.4332107843137255) 59%
+                                );
+                            }
+                        }
+
+                        &.stiches {
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                bottom: 0;
+                                left: 0;
+                                opacity: 0.3;
+                                z-index: 0;
+                                background: linear-gradient(
+                                    90deg,
+                                    rgba(189, 188, 188, 0.9822303921568627) 11%,
+                                    rgba(198, 198, 198, 0.4332107843137255) 59%
+                                );
+                            }
+                        }
                     }
                 }
             }
