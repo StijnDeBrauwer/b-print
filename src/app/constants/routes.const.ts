@@ -26,8 +26,8 @@ export const AppRoutes: LinkModel[] = [
 				path: 'baches-en-vlaggen',
 			},
 			{
-				text: 'Canvassen',
-				path: 'canvassen',
+				text: "Promo's",
+				path: 'promos',
 			},
 		],
 	},

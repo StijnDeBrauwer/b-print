@@ -15,14 +15,14 @@
 
             <div class="textile__products">
 
-                <div class="products__product" (click)="navigateToTextilePage()">
+                <div class="products__product textile" (click)="navigateToTextilePage()">
                     <!-- Textiel -->
                     <app-category-card [imagePath]="textileCard.imagePath" [description]="textileCard.description"
                         [backgroundColor]="textileCard.backgroundColor">
                     </app-category-card>
                 </div>
 
-                <div class="products__product">
+                <div class="products__product lettering ">
                     <!-- Bedrukking (opdruk en borduren) -->
                     <app-category-card [imagePath]="bachesAndFlagsCard.imagePath"
                         [description]="bachesAndFlagsCard.description"
@@ -30,7 +30,7 @@
                     </app-category-card>
                 </div>
 
-                <div class="products__product">
+                <div class="products__product stiches">
                     <!-- Baches -->
                     <app-category-card [imagePath]="stichCard.imagePath" [description]="stichCard.description"
                         [backgroundColor]="stichCard.backgroundColor">
@@ -40,12 +40,33 @@
         </div>
 
         <div class="content-container__section">
-            <h2>Stickers</h2>
+            <div class="section__content">
+                <h1>Stikkers</h1>
+                <p>
+                    Naast de verkoop van shirts en andere kledij, bieden we `op maat gemaakte` stikkers aan!
+                    Deze stickers bieden we aan:
+                </p>
+
+                <ul>
+                    <li>Autostickers</li>
+                    <li>Raam decoratie</li>
+                    <li>Carwraps</li>
+                    <li>Vloer stikkers</li>
+                    <li>Behangpapier</li>
+                </ul>
+                <p>
+                    Ontdek nu welke diensten we precies aanbieden.
+                </p>
+            </div>
+
+            <div class="section__image">
+                <img src="../../../assets/images/products/cards/sitckers-card.jpg" />
+            </div>
         </div>
 
 
         <div class="content-container__section">
-            <h2>Canvassen</h2>
+            <h1>Promo's</h1>
         </div>
     </div>
 </section>

@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Products } from 'src/app/constants/product.const';
 import { Product } from 'src/app/models/product.model';
 
@@ -9,7 +9,7 @@ import { Product } from 'src/app/models/product.model';
 })
 export class ProductListComponent implements OnInit {
 	@Output() onNavigateToDetail: EventEmitter<string> = new EventEmitter();
-	products: Product[] = Products;
+	@Input() products: Product[];
 
 	constructor() {}
 
