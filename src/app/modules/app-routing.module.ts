@@ -48,7 +48,7 @@ const routes: Routes = [
 		component: BachesAndFlagsPage,
 	},
 	{
-		path: 'specialiteiten',
+		path: 'promos',
 		component: SpecialtiesPage,
 	},
 	{

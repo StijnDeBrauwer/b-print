@@ -28,7 +28,7 @@ export class ProductsPage implements OnInit {
 	}
 
 	navigateToSpecials() {
-		this.router.navigate(['/specialiteiten']);
+		this.router.navigate(['/promos']);
 	}
 
 	get textileCard(): { imagePath: string; description: string; backgroundColor: string } {
