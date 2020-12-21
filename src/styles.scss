@@ -107,6 +107,10 @@ body {
 
     &:nth-child(odd) {
         background-color: var(--light-grey);
+        padding: 1rem 0;
+        padding-left: var(--padding-left-desktop);
+        padding-right: var(--padding-left-desktop);
+        margin: 0;
 
         .section__content {
         }
