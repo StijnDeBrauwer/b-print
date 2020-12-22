@@ -37,7 +37,12 @@ export class TextilePage implements OnInit {
 	}
 
 	get tShirts(): Product[] {
-		return this.filterProductsByType(SubProductType.Shirt);
+		return [
+			...this.filterProductsByType(SubProductType.Shirt),
+			...this.basicShirts,
+			...this.sportShirt,
+			...this.slimFitShirts,
+		];
 	}
 
 	get sportShirt(): Product[] {

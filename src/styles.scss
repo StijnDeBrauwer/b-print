@@ -68,6 +68,29 @@ body {
     font-size: var(--font-size-r);
 }
 
+.cta {
+    display: inline-block;
+    color: white;
+    font-size: var(--font-size-s);
+    font-family: var(--font-family-semibold);
+    cursor: pointer;
+    text-align: left;
+    z-index: 2;
+
+    margin: 1rem 0;
+
+    background-color: var(--second-color);
+    border-radius: 16px;
+    box-shadow: 1px -1px 1px 0px var(--second-color);
+    padding: 0.5rem;
+}
+
+ul {
+    @media screen and (max-width: 768px) {
+        text-align: left;
+    }
+}
+
 .section {
     padding-left: var(--padding-left-desktop);
     padding-right: var(--padding-left-desktop);
