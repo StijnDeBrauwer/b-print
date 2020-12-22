@@ -27,7 +27,7 @@ import { ProductDetailMobileComponent } from './components/products/mobile/detai
 import { TextilePage } from './pages/textile-page/textile.page';
 import { StickersPage } from './pages/stickers-page/stickers.page';
 import { BachesAndFlagsPage } from './pages/baches-and-flags-page/baches-and-flags.page';
-import { SpecialtiesPage } from './pages/specialties-page/specialties.page';
+import { PromosPage } from './pages/promos-page/promos.page';
 import { RealizationsPage } from './pages/realizations-page/realizations.page';
 import { CategoryCardComponent } from './components/category-card/category-card.component';
 import { PrintingPage } from './pages/printing-page/printing.page';
@@ -53,7 +53,7 @@ import { ClickOutsideDirective } from './directives/clickOutside.directive';
 		TextilePage,
 		StickersPage,
 		BachesAndFlagsPage,
-		SpecialtiesPage,
+		PromosPage,
 		CategoryCardComponent,
 		RealizationsPage,
 		PrintingPage,
