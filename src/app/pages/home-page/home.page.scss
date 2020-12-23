@@ -1,7 +1,7 @@
 .home {
   .home__banner {
     position: relative;
-    background: url("../../../assets/images/home/home.png");
+    background: url("../../../assets/images/home/home-min.png");
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: cover;
@@ -111,10 +111,10 @@
       img {
         @media screen and (max-width: 768px) {
           width: 35vw;
-          height: 35vw;
+          height: auto;
         }
         width: 20vw;
-        height: 20vw;
+        height: auto;
       }
     }
 

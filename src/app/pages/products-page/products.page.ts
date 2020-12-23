@@ -19,6 +19,10 @@ export class ProductsPage implements OnInit {
 		this.router.navigate(['/textiel']);
 	}
 
+	navigateToBaches() {
+		this.router.navigate(['/baches-en-vlaggen']);
+	}
+
 	navigateToPrintingPage() {
 		this.router.navigate(['/bedrukkingen']);
 	}

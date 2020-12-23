@@ -121,10 +121,12 @@ ul {
         img {
             @media screen and (max-width: 768px) {
                 width: 35vw;
-                height: 35vw;
+                height: auto;
+                // height: 35vw;
             }
             width: 20vw;
-            height: 20vw;
+            height: auto;
+            // height: 20vw;
         }
     }
 

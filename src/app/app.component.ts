@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { ResponsiveService } from './services/responsive/responsive.service';
 
@@ -16,7 +17,7 @@ export class AppComponent implements OnInit, OnDestroy {
 	private _responsiveSubscription: Subscription;
 	isMobile: boolean;
 
-	constructor(private responsiveService: ResponsiveService) {
+	constructor(private responsiveService: ResponsiveService, private router: Router) {
 		this._responsiveSubscription = this.responsiveService.isMobileSubject.subscribe((isMobile) => {
 			console.log(isMobile);
 			this.isMobile = isMobile;
@@ -26,6 +27,13 @@ export class AppComponent implements OnInit, OnDestroy {
 
 	ngOnInit() {
 		this.onResize();
+
+		this.router.events.subscribe((evt) => {
+			if (!(evt instanceof NavigationEnd)) {
+				return;
+			}
+			window.scrollTo(0, 0);
+		});
 	}
 
 	ngOnDestroy() {

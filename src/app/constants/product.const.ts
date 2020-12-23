@@ -117,6 +117,109 @@ export const Products: Product[] = [
 		subType: SubProductType.Hoodie,
 	},
 	{
+		articleNumber: 'BCWU02K',
+		displayName: 'KING Hooded Sweat',
+		description:
+			'Deze comfortabele Regular fit hoodie heeft een glad, zacht en gelijkmatig oppervlak. De binnenzijde bestaat uit geborsteld fleece waardoor het u nog meer comfort biedt! Deze hoodie is ideaal voor koude dagen, en voor activiteiten waar ultiem comfort nodig is!',
+		imagePaths: ['BCWU02K/hoodie.jpg', 'BCWU02K/hoodie_front.jpg', 'BCWU02K/hoodie_back.jpg'],
+		type: ProductType.Textile,
+		sizes: [
+			ProductSizes.XS,
+			ProductSizes.S,
+			ProductSizes.M,
+			ProductSizes.L,
+			ProductSizes.XL,
+			ProductSizes.XXL,
+			ProductSizes.XXXL,
+			ProductSizes.XXXXL,
+		],
+		composition: ['80% Katoen', ' 20% Polyester'],
+		colors: [
+			{
+				hex: '#C1D3C7',
+				name: 'Aqua Green',
+			},
+			{
+				hex: '#433F42',
+				name: 'Asphalt',
+			},
+			{
+				hex: '#070508',
+				name: 'Black Pure',
+			},
+			{
+				hex: '#1E4026',
+				name: 'Bottle Green',
+			},
+			{
+				hex: '#5C2333',
+				name: 'Dark Cherry',
+			},
+			{
+				hex: '#D8D2C0',
+				name: 'Grey Fog',
+			},
+			{
+				hex: '#b1b3b4',
+				name: 'Heather Grey',
+			},
+			{
+				hex: '#7F8080',
+				name: 'Heather Mid Grey',
+			},
+			{
+				hex: '#4c4b30',
+				name: 'Khaki',
+			},
+			{
+				hex: '#DC1A62',
+				name: 'Magenta Pink',
+			},
+			{
+				hex: '#101145',
+				name: 'Navy Blue',
+			},
+			{
+				hex: '#5F7788',
+				name: 'Nordic Blue',
+			},
+			{
+				hex: '#EB5D0F',
+				name: 'Pure Orange',
+			},
+			{
+				hex: '#DDE7E9',
+				name: 'Pure Sky',
+			},
+			{
+				hex: '#3B1D66',
+				name: 'Radiant Purple',
+			},
+			{
+				hex: '#db001b',
+				name: 'Red',
+			},
+			{
+				hex: '#13377D',
+				name: 'Royal',
+			},
+			{
+				hex: '#F0D1C4',
+				name: 'Soft Rose',
+			},
+			{
+				hex: '#FFFFFF',
+				name: 'White',
+			},
+			{
+				hex: '#FFDF51',
+				name: 'Yellow Fizz',
+			},
+		],
+		gender: Gender.UniSex,
+		subType: SubProductType.Hoodie,
+	},
+	{
 		articleNumber: 'E4099',
 		displayName: "Men's Premium-T Longsleeve",
 		description:
@@ -157,7 +260,7 @@ export const Products: Product[] = [
 			},
 		],
 		gender: Gender.Male,
-		subType: SubProductType.Hoodie,
+		subType: SubProductType.Shirt,
 	},
 	{
 		articleNumber: 'E3081',
