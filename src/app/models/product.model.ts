@@ -3,7 +3,7 @@ export interface Product {
 	displayName: string;
 	description: string;
 	imagePaths: string[];
-	price?: number;
+	price?: string;
 	type: ProductType;
 	subType?: SubProductType;
 	sizes?: ProductSizes[];

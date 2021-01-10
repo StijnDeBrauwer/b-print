@@ -8,6 +8,7 @@ export const Products: Product[] = [
 			'Deze stijlvolle hoodie heeft een dubbellaagse capuchon met trekkoord in dezelfde kleur. Het voorziet comfort en tegelijkertijd ook de nodige warmte.  Een zakje voorin is eveneens inbegrepen. Ideaal om te dragen tijdens buitenactiviteiten of om jezelf gewoon wat op te warmen!',
 		imagePaths: ['F421/hoodie.jpg', 'F421/hoodie_front.jpg', 'F421/hoodie_back.jpg', 'F421/hoodie_side.jpg'],
 		type: ProductType.Textile,
+		price: '15,00',
 		sizes: [
 			ProductSizes.S,
 			ProductSizes.M,
@@ -226,6 +227,7 @@ export const Products: Product[] = [
 			'Dit stijlvol shirt met lange mouwen is gemaakt uit gekamd katoen. Hij heeft een elastane ribgebreide kraag. Het kan gedragen worden in vrijetijd maar voorziet alle comfort',
 		imagePaths: ['E4099/shirt.jpg', 'E4099/shirt_front.jpg', 'E4099/shirt_back.jpg', 'E4099/shirt_side.jpg'],
 		type: ProductType.Textile,
+		price: '15,00',
 		sizes: [
 			ProductSizes.S,
 			ProductSizes.M,
@@ -274,6 +276,7 @@ export const Products: Product[] = [
 			'E3081/shirt-short-sleeves_side.jpg',
 		],
 		type: ProductType.Textile,
+		price: '11,00',
 		sizes: [ProductSizes.S, ProductSizes.M, ProductSizes.L, ProductSizes.XL, ProductSizes.XXL],
 		composition: ['95% Katoen', '5% Elastaan (Sports Grey: 81% Katoen / 14% Viscose / 5% Elastaan)'],
 		colors: [
@@ -305,6 +308,7 @@ export const Products: Product[] = [
 			'E3085/shirt-women-short_side.jpg',
 		],
 		type: ProductType.Textile,
+		price: '11,00',
 		sizes: [ProductSizes.S, ProductSizes.M, ProductSizes.L, ProductSizes.XL, ProductSizes.XXL],
 		composition: ['95% Katoen', '5% Elastaan (Sports Grey: 81% Katoen / 14% Viscose / 5% Elastaan)'],
 		colors: [
@@ -336,6 +340,7 @@ export const Products: Product[] = [
 			'E1000/shirt-basic_side.jpg',
 		],
 		type: ProductType.Textile,
+		price: '9,00',
 		sizes: [ProductSizes.S, ProductSizes.M, ProductSizes.L, ProductSizes.XL, ProductSizes.XXL],
 		composition: ['100% Katoen'],
 		colors: [
@@ -382,6 +387,7 @@ export const Products: Product[] = [
 			'Deze  Single Jersey (Regular Fit) voor vrouwen heeft een zachte pasvorm en een neutraal maatlabel zijdelings in de nek.',
 		imagePaths: ['E1051/top.jpg', 'E1051/top_front.jpg', 'E1051/top_back.jpg', 'E1051/top_side.jpg'],
 		type: ProductType.Textile,
+		price: '10,00',
 		sizes: [
 			ProductSizes.XS,
 			ProductSizes.S,
@@ -428,6 +434,7 @@ export const Products: Product[] = [
 			'Dit shirt heeft een ronde halsuitsnijding geribbeld met gelijkkleurige nekband. Daarnaast heeft het een fijn breiwerk voor verhoogde printbaarheid.',
 		imagePaths: ['F110/original-t.jpg', 'F110/original-t_front.jpg', 'F110/original-t_back.jpg'],
 		type: ProductType.Textile,
+		price: '9,00',
 		sizes: [
 			ProductSizes.S,
 			ProductSizes.M,
@@ -531,6 +538,7 @@ export const Products: Product[] = [
 			'F111/ladies-original-t_back.jpg',
 		],
 		type: ProductType.Textile,
+		price: '9,00',
 		sizes: [ProductSizes.XS, ProductSizes.S, ProductSizes.M, ProductSizes.L, ProductSizes.XL, ProductSizes.XXL],
 		composition: ['100% Katoen'],
 		colors: [
@@ -621,6 +629,7 @@ export const Products: Product[] = [
 			'Dit shirt heeft een ronde halsuitsnijding geribbeld met gelijkkleurige nekband. Het heeft ook een gevormde zijnaden voor een vrouwelijke pasvorm. Daarnaast heeft het een fijn breiwerk voor verhoogde printbaarheid.',
 		imagePaths: ['F110K/kids-original-t.jpg', 'F110K/kids-original-t_front.jpg', 'F110K/kids-original-t_back.jpg'],
 		type: ProductType.Textile,
+		price: '8,00',
 		sizes: [
 			ProductSizes.K104,
 			ProductSizes.K116,
@@ -718,6 +727,7 @@ export const Products: Product[] = [
 			'Dit sport shirt heeft een 100% getextureerd polyester voor uitstekende vochtafvoer en snelle droging van het materiaal. Ideaal voor intensieve inspanningen met maximaal comfort',
 		imagePaths: ['F350/performance-t.jpg', 'F350/performance-t_front.jpg', 'F350/performance-t_back.jpg'],
 		type: ProductType.Textile,
+		price: '10,50',
 		sizes: [ProductSizes.S, ProductSizes.M, ProductSizes.L, ProductSizes.XL, ProductSizes.XXL],
 		composition: ['100% Polyester'],
 		colors: [
@@ -772,6 +782,7 @@ export const Products: Product[] = [
 			'F550/men-performance-polo_back.jpg',
 		],
 		type: ProductType.Textile,
+		price: '10,00',
 		sizes: [ProductSizes.S, ProductSizes.M, ProductSizes.L, ProductSizes.XL, ProductSizes.XXL, ProductSizes.XXXL],
 		composition: ['100% Polyester'],
 		colors: [
@@ -811,6 +822,7 @@ export const Products: Product[] = [
 			'F551/ladies-performance-polo_side.jpg',
 		],
 		type: ProductType.Textile,
+		price: '10,00',
 		sizes: [ProductSizes.S, ProductSizes.M, ProductSizes.L, ProductSizes.XL, ProductSizes.XXL],
 		composition: ['100% Polyester'],
 		colors: [

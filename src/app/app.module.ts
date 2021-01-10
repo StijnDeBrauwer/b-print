@@ -32,6 +32,11 @@ import { RealizationsPage } from './pages/realizations-page/realizations.page';
 import { CategoryCardComponent } from './components/category-card/category-card.component';
 import { PrintingPage } from './pages/printing-page/printing.page';
 import { ClickOutsideDirective } from './directives/clickOutside.directive';
+import { CommonModule, CurrencyPipe } from '@angular/common';
+import { registerLocaleData } from '@angular/common';
+import localeFr from '@angular/common/locales/nl-BE';
+
+registerLocaleData(localeFr, 'nl-BE');
 
 @NgModule({
 	declarations: [

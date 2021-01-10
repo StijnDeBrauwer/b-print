@@ -1,4 +1,8 @@
 <section class="realizations-page">
+
+    <ng-image-fullscreen-view [images]="imageArray" [imageIndex]="selectedImageIndex" [show]="showFlag"
+        (close)="closeEventHandler()"></ng-image-fullscreen-view>
+
     <div class="banner">
         <h1>Onze realisaties</h1>
     </div>
@@ -6,13 +10,15 @@
     <div class="section">
         <div class="section__content">
             <h1>
-                Lorem ipsum
+                Onze realisaties
             </h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur.
+            <p> Doorheen de jaren hebben we wel wat gerealiseerd voor onze verschillende partners. Hierdoor hebben we al
+                heel wat ervaring opgedaan, dus daarom is B-prints de ideale partner voor u!
             </p>
+            <div class="cta" (click)="openRealizations(0)">
+                Ontdek onze realisaties
+                <span class="icon ion-ios-arrow-forward"></span>
+            </div>
         </div>
         <div class="section__image">
             <img src="./assets/images/promos/bride_shirt.jpg" />
